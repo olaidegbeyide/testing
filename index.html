@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="bootsrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
     integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+    <nav cl>
+
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" >
         <div class="container">
           <a class="navbar-brand" href="#"><img src="images/Style.png" alt="" width="126px" height="40px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -36,6 +40,60 @@
                 <a class="nav-link text-dark" href="#FAQs">Contact us</a>
               </li>
             </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-dark ">
+                <a class="nav-link text-dark" href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav-item text-dark ">
+                <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#modalCart">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+                <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #ff8b30;">
+        <h4 class="modal-title" id="myModalLabel">My cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product name</th>
+              <th>Price</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Product 1</td>
+              <td>100$</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" style="background-color: #ff8b30; color: #ffffff;" data-dismiss="modal">Close</button>
+        <button class="btn " style="background-color: #ff8b30; color: #ffffff;">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -50,18 +108,18 @@
             <div class="carousel-item active" style="background-image: url('images/landing-img.png')">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 mb-5">Designed to make you feel confident and comfortable</h1>
-                    <button class="btn mb-5 caption-btn" id="caption-btn">shop now</button>
+                    <button class="btn mb-5 caption-btn" id="caption-btn" style="color: #ffffff;">shop now</button>
                   </div>
             </div>
-            <div class="carousel-item" style="background-image: url('images/blazer.png')">
+            <div class="carousel-item" style="background-image: url('images/dress.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 mb-5">Designed to make you feel confident and comfortable</h1>
-                    <button class="btn mb-5" id="caption-btn" >shop now</button>
+                    <button class="btn mb-5" id="caption-btn" style="color: #ffffff;">shop now</button>
                   </div></div>
-            <div class="carousel-item" style="background-image: url('images/burgundy.jpg')">
+            <div class="carousel-item" style="background-image: url('images/landing-img.png')">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 mb-5">Designed to make you feel confident and comfortable</h1>
-                    <button class="btn mb-5" id="caption-btn">shop now</button>
+                    <button class="btn mb-5" id="caption-btn"style="color: #ffffff;" >shop now</button>
                   </div></div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,21 +132,23 @@
           </a>
         </div>
       </header>
-     
-      <section>
-          <div class="discount">
-              <h3 class="text-center text-white pt-5">GET UP TO 20% OFF FROM AMAZING BRANDS</h3>
-          </div>
-      </section>
 
-      <section class="pt-5" id="portfolio">
-        <div class="container-fluid p-5 mx-auto">
+      <div class="jumbotron jumbotron-fluid discount">
+        <div class="container text-center">
+          <h2 class="">GET UP TO 20% OFF FROM AMAZING <br> 
+            <span>BRANDS</span></h2>
+        </div>
+      </div>
+    
+
+      <section class="page-section pt-5">
+        <div class="container-fluid p-4 mx-auto">
             <h1 style="text-align: center; color: #000000;">Female Fashion</h1>
             <hr class="divider m-4">
             <div class="row pt-4">
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -99,7 +159,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                       <button class="btn" id="add-to-cart">
@@ -110,7 +170,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text"> New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -121,7 +181,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -132,7 +192,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                   <div class="card h-100 ">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -143,7 +203,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -154,7 +214,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn" id="add-to-cart">
@@ -165,7 +225,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                   <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="images/top.png" alt=""></a>
                     <div class="card-body text-center">
                         <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                         <button class="btn " id="add-to-cart">
@@ -176,14 +236,14 @@
                 </div>
               </div>
 
-              <section class="pt-5" id="portfolio">
-                <div class="container-fluid p-5 mx-auto">
+              <section class="page-section pt-5" style="background-color: #ff8b30;">
+                <div class="container-fluid p-3 mx-auto">
                     <h1 style="text-align: center; color: #000000;">Male Fashion</h1>
                     <hr class="divider m-4">
                     <div class="row pt-4">
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -194,7 +254,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                               <button class="btn" id="add-to-cart">
@@ -205,7 +265,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text"> New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -216,7 +276,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="images/burgundy.png" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -227,7 +287,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                           <div class="card h-100 ">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -238,7 +298,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -249,7 +309,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -260,7 +320,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3">
                           <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="images/shirt.png" alt=""></a>
                             <div class="card-body text-center">
                                 <p class="card-text">New style stand collar gradient blue shirt men linen breathable fashion men shirts</p>
                                 <button class="btn" id="add-to-cart">
@@ -272,6 +332,68 @@
                       </div>
         </div>
       </section>
+      
+  <footer class="footer">
+        <div class="container-fluid custom-container">
+          <p class="pl-3">Connect with us for update and offers</p>
+          <form class="form-inline">
+              <div class="form-group mx-sm-3 mb-2">
+                <input type="email" class="form-control format" id="inputPassword2" placeholder="Enter your email address">
+              </div>
+              <button type="submit" class="btn mb-2" style="background-color: #ff6600; color: #fff">Subscribe</button>
+            </form>
+           <div class="row top">
+              <div class="col-12 col-md-6">
+                 <div class="py-3 d-none d-md-block">
+                    <img src="images/Style (2).png" alt="logo">
+                 </div>
+                 <p class="py-3">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Voluptatum corrupti officia aspernatur fugiat, 
+                     velit praesentium quidem atque nam iste accusantium, 
+                     assumenda,eaque accusamus quis earum id? 
+                     Cum quas voluptas quidem.Lorem ipsum dolor 
+                     sit amet consectetur adipisicing elit. 
+                     Voluptatum corrupti officia aspernatur fugiat, 
+                     velit praesentium quidem atque nam iste accusantium 
+                 </p>
+                 <br>
+  
+                 <ul class="pl-0 loremlink">
+                  <li class="py-1"><a href="">Privacy</a></li>
+                  <li class="py-1"><a href="">Terms & condition</a></li>
+                  <li class="py-1"><a href="">SiteMap</a></li>
+               </ul>
+              </div>
+              <div class="col col-md-4">
+                 <h5 class="py-3">About Style</h5>
+                 <ul class="pl-0">
+                    <li class="py-1"><a href="">About Us</a></li>
+                    <li class="py-1"><a href="">Careers</a></li>
+                    <li class="py-1"><a href="">Blog</a></li>
+                    <li class="py-1"><a href="">Developers</a></li>
+                    <li class="py-1"><a href="">Mobile apps</a></li>
+                    <li class="py-1"><a href="">Contact</a></li>
+                 </ul>
+              </div>
+  
+              <div class="col-6 col-md-2">
+                 <h5 class="py-3">Partner With Us</h5>
+                 <ul class="pl-0">
+                    <li><a href="">For resturant</a></li>
+                    <li class="py-1"><a href="">For Driver</a></li>
+                 </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+              </div>
+              
+           </div>
+           </div>
+        </div>
+     </footer>
     
 
     <script src="bootsrap/js/bootstrap.min.js"></script>
@@ -284,3 +406,4 @@
     
 </body>
 </html>
+

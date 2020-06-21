@@ -1,3 +1,10 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .carousel-item {
     height: 90vh;
     min-height: 500px;
@@ -7,7 +14,6 @@
     -o-background-size: cover;
     background-size: cover;
   }
-
   #caption-btn {
     background: #FF8B30;
     border-radius: 100px;
@@ -15,6 +21,9 @@
   .discount {
     height: 149px;
     background: linear-gradient(90deg, #FF8B30 23.96%, #FF7000 52.6%);
+  }
+  .discount h2{
+    background-color:  #C4C4C4;
   }
   #top {
     position: absolute;
@@ -28,14 +37,16 @@
   #add-to-cart a {
     color: #FF7000;
   }
-  #top-div {
-    /* width: 400px;
-    /* height: 600px; */
-    display: inline-block;
-    left: 30%; 
-    top:40%;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+#top-div {
+  width: 400px;
+  height: 650px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -195px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: relative;
+  flex-direction: column;
 }
 .my-btn {
   background: linear-gradient(90deg, #FFD538 0%, #FF9231 100%);
@@ -43,3 +54,89 @@ box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 border-radius: 5px;
 color: #ffffff;
 }
+
+.footer {
+  background: #000;
+  color: #fff;
+  line-height: 1.8;
+  padding: 50px;
+}
+
+.footer h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer p,
+.footer ul li a {
+  font-weight: 300;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer p {
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.loremlink li{
+   float: left;
+   margin-right: 15px;
+}
+
+.form-group .form-control{
+   width: 400px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px){
+   .footer p{
+       max-width: 100%;
+   }
+  .btn{
+       width: 100%;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .footer{
+       padding: 40px 0;
+   }
+   .footer p{
+       max-width: 100%;
+   }
+   
+   .btn{
+       width: 100%;
+   }
+ }
+ 
+ @media screen and (max-width: 768px) {
+
+   .footer{
+       padding: 40px 0;
+   }
+
+   .footer p{
+       max-width: 100%;
+   }
+ }
+
+ @media (min-width: 576px){
+   .ml-sm-3, .mx-sm-3 {
+       margin-left: 0;
+   }
+ }
